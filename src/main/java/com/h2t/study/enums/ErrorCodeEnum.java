@@ -8,6 +8,9 @@ package com.h2t.study.enums;
  * @Date 2019/08/01 16:51
  */
 public enum ErrorCodeEnum {
+    /**
+     * 错误码
+     * */
     Param_does_not_exist("0001","查找参数不存在"),
     Param_does_not_correct("0002","所传参数格式不正确");
 
@@ -25,6 +28,19 @@ public enum ErrorCodeEnum {
      * */
     private String errorMsg;
 
-    ssh -T git 969795191@qq.com@git 192.168.56.1
+    public String getErrorCode() {
+        return errorCode;
+    }
 
+    public void setErrorCode(String errorCode) {
+        this.errorCode = errorCode;
+    }
+
+    public String getErrorMsg() {
+        return errorMsg;
+    }
+
+    public void setErrorMsg(String errorMsg) {
+        this.errorMsg = errorMsg;
+    }
 }
