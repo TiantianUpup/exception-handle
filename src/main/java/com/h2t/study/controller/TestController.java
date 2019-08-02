@@ -23,4 +23,10 @@ public class TestController {
     public Object test() {
         throw new CustomException(ErrorCodeEnum.Param_does_not_correct);
     }
+
+    @GetMapping("/test2")
+    public Object test2() {
+        System.out.println("enter");
+        return 2 / 0;
+    }
 }
